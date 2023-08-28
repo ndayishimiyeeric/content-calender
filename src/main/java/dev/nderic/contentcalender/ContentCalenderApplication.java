@@ -1,5 +1,6 @@
 package dev.nderic.contentcalender;
 
+import dev.nderic.contentcalender.config.ContentCalendarProperties;
 import dev.nderic.contentcalender.model.Content;
 import dev.nderic.contentcalender.model.Status;
 import dev.nderic.contentcalender.model.Type;
@@ -7,10 +8,12 @@ import dev.nderic.contentcalender.repository.ContentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDateTime;
 
+@EnableConfigurationProperties(ContentCalendarProperties.class)
 @SpringBootApplication
 public class ContentCalenderApplication {
 
