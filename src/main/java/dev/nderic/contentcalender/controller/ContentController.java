@@ -1,7 +1,9 @@
 package dev.nderic.contentcalender.controller;
 
 import dev.nderic.contentcalender.model.Content;
+import dev.nderic.contentcalender.model.Status;
 import dev.nderic.contentcalender.repository.ContentCollectionRepository;
+import dev.nderic.contentcalender.repository.ContentRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,9 +16,9 @@ import java.util.List;
 @RequestMapping("/api/content")
 @CrossOrigin // set CORS to visible
 public class ContentController {
-    private final ContentCollectionRepository repository;
+    private final ContentRepository repository;
 
-    public ContentController(ContentCollectionRepository repository) { // inject the repository
+    public ContentController(ContentRepository repository) { // inject the repository
         this.repository = repository;
     }
 
@@ -42,7 +44,7 @@ public class ContentController {
     @ResponseStatus(HttpStatus.NO_CONTENT) // Update
     @PutMapping("/{id}")
     public void updateContent(@RequestBody Content content, @PathVariable Integer id) {
-        if (!repository.existById(id)) {
+        if (!repository.existsById(id)) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Content not found");
         }
 
@@ -53,5 +55,15 @@ public class ContentController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id) {
         repository.deleteById(id);
+    }
+
+    @GetMapping("/filter/{keyword}")
+    public List<Content> findByKeyword(@PathVariable String keyword){
+        return repository.findAllByTitleContains(keyword);
+    }
+
+    @GetMapping("/filter/status/{status}")
+    public List<Content> findByStatus(@PathVariable Status status) {
+        return repository.listByStatus(status);
     }
 }
