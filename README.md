@@ -19,40 +19,42 @@ Key Features:
 
 ### Endpoints
 
-####
 ```http request
-# Get Details (Home)
+### Get Details (Home)
 GET /
 ```
 
 ```http request
-# Get All contents
+### Get All contents
 GET /api/content/
 ```
 
 ```http request
-# Get a specific content
+### Get a specific content
 GET /api/content/{{id}}
 ```
 
 ```http request
-# Add a new content
+### Add a new content
 POST /api/content/
 Content-Type: application/json
 {
   "id": null,
-  "title": String,
-  "desc": String,
-  "url": String,
-  "status": enum["IDEA", "IN_PROGRESS", "COMPLETED", "PUBLISHED"],
-  "contentType": enum["ARTICLE", "VIDEO", "COURSE", "CONFERENCE_TALK"],
+  "title": "",
+  "desc": "",
+  "url": """",
+  "status": "",
+  "contentType": "",
   "dateCreated": "",
   "dateUpdated": null
 }
+
+### enum status ["IDEA", "IN_PROGRESS", "COMPLETED", "PUBLISHED"]
+### enum contentType["ARTICLE", "VIDEO", "COURSE", "CONFERENCE_TALK"]
 ```
 
 ```http request
-# Update existing content
+### Update existing content
 PUT /api/content/{{id}}
 Content-Type: application/json
 {
@@ -60,25 +62,28 @@ Content-Type: application/json
   "title": String,
   "desc": String,
   "url": String,
-  "status": enum["IDEA", "IN_PROGRESS", "COMPLETED", "PUBLISHED"],
-  "contentType": enum["ARTICLE", "VIDEO", "COURSE", "CONFERENCE_TALK"],
+  "status": "",
+  "contentType": "",
   "dateCreated": "",
   "dateUpdated": null
 }
+
+### enum status ["IDEA", "IN_PROGRESS", "COMPLETED", "PUBLISHED"]
+### enum contentType["ARTICLE", "VIDEO", "COURSE", "CONFERENCE_TALK"]
 ```
 
 ```http request
-# Delete existing content
+### Delete existing content
 DELETE /api/content/{{id}}
 ```
 
 ```http request
-# Filter by keyword
+### Filter by keyword
 GET /api/content/filter/{{keyword}}
 ```
 
 ```http request
-# Filter by status
+### Filter by status
 GET /api/content/filter/status/{{status}}
 ```
 
