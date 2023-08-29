@@ -1,0 +1,82 @@
+[
+  {
+    "id": null,
+    "title": "The Importance of Artificial Intelligence",
+    "desc": "In today's digital age, artificial intelligence (AI) has become an integral part",
+    "url": "/articles/the-importance-of-ai",
+    "status": "PUBLISHED",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-01-27T00:00:00.000000",
+    "dateUpdated": null
+  },
+  {
+    "id": null,
+    "title": "Weekly Tech News Roundup",
+    "desc": "Stay updated with the latest tech news and trends from around the world",
+    "url": "/news/weekly-tech-news",
+    "status": "IN_PROGRESS",
+    "contentType": "VIDEO",
+    "dateCreated": "2023-01-27T00:00:00.000000",
+    "dateUpdated": "2023-08-23T11:15:00.000000"
+  },
+  {
+    "id": null,
+    "title": "Exploring the Future of Quantum Computing",
+    "desc": "Quantum computing holds the potential to revolutionize various industries",
+    "url": "/articles/future-of-quantum-computing",
+    "status": "PUBLISHED",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-03-15T00:00:00.000000",
+    "dateUpdated": null
+  },
+  {
+    "id": null,
+    "title": "Health and Wellness Tips for a Balanced Lifestyle",
+    "desc": "Discover practical tips for maintaining a healthy lifestyle and achieving balance",
+    "url": "/health-tips/balanced-lifestyle",
+    "status": "COMPLETED",
+    "contentType": "CONFERENCE_TALK",
+    "dateCreated": "2023-04-10T00:00:00.000000",
+    "dateUpdated": null
+  },
+  {
+    "id": null,
+    "title": "The Rise of E-Commerce: Trends and Innovations",
+    "desc": "E-commerce has experienced significant growth due to technological advancements",
+    "url": "/articles/rise-of-e-commerce",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-05-22T00:00:00.000000",
+    "dateUpdated": null
+  },
+  {
+    "id": null,
+    "title": "Travel Destinations for Adventure Enthusiasts",
+    "desc": "Explore thrilling travel destinations around the world for adventure seekers",
+    "url": "/travel/adventure-destinations",
+    "status": "PUBLISHED",
+    "contentType": "VIDEO",
+    "dateCreated": "2023-06-05T00:00:00.000000",
+    "dateUpdated": null
+  },
+  {
+    "id": null,
+    "title": "The Evolution of Artificial Intelligence in Healthcare",
+    "desc": "AI is transforming the healthcare landscape, enhancing diagnostics and treatment",
+    "url": "/articles/ai-in-healthcare-evolution",
+    "status": "IN_PROGRESS",
+    "contentType": "COURSE",
+    "dateCreated": "2023-07-18T00:00:00.000000",
+    "dateUpdated": null
+  },
+  {
+    "id": null,
+    "title": "Culinary Adventures: Exploring Global Cuisine",
+    "desc": "Embark on a culinary journey to discover diverse flavors and cuisines from around the world",
+    "url": "/food-travel/global-cuisine",
+    "status": "COMPLETED",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-08-02T00:00:00.000000",
+    "dateUpdated": null
+  }
+]

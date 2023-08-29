@@ -1,17 +1,18 @@
 package dev.nderic.contentcalender;
 
+import dev.nderic.contentcalender.config.ContentCalendarProperties;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
+
+@EnableConfigurationProperties(ContentCalendarProperties.class)
 @SpringBootApplication
 public class ContentCalenderApplication {
 
-	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(ContentCalenderApplication.class, args);
-		RestTemplate restTemplate = (RestTemplate) context.getBean("restTemplate"); // getting our created RestTemplate
-		System.out.println(restTemplate); // print the signature
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ContentCalenderApplication.class, args);
+    }
 
 }
